@@ -14,7 +14,8 @@
     SETTINGS
     User settings
 */
-@import 'briks/settings/foobar';
+@import 'briks/settings/tokens/goacar';
+@import 'flex_goacar';
 /*
     CSS VARIABLES
     Requires _core.scss
@@ -26,14 +27,14 @@
     Requires _core.scss
     This file builds CSS keyframes for animations
 */
-// @import 'briks/keyframes';
+@import 'briks/keyframes';
 /*
     UTILITIES
-    Requires _core.scss
-    This file builds simple CSS classes containing only one or few properties in relation with core settings
-    In utilities, all properties are !important to override any setting
+    // Requires _core.scss
+    // This file builds simple CSS classes containing only one or few properties in relation with core settings
+    // In utilities, all properties are !important to override any setting
 */
-// @import 'briks/utilities';
+@import 'briks/utilities';
 
 /*
     COMPONENTS

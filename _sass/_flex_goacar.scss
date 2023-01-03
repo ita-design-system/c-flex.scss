@@ -1,0 +1,66 @@
+$briks-components-generic: (
+    flex: (
+        enabled: true,
+        responsive: true,
+        defaults: (
+            display: flex,
+            flex-wrap: wrap,
+        ),
+        modifiers: (
+            g12: (
+                gap: 12px
+            ),
+            g16: (
+                gap: 16px
+            ),
+            g24: (
+                gap: 24px
+            ),
+            g32: (
+                gap: 32px
+            ),
+            main-center: (
+                justify-content: center
+            ),
+            main-space-between: (
+                justify-content: space-between
+            ),
+            main-space-around: (
+                justify-content: space-around
+            ),
+            main-space-evenly: (
+                justify-content: space-evenly
+            ),
+            main-start: (
+                justify-content: flex-start
+            ),
+            main-end: (
+                justify-content: flex-end
+            ),
+            cross-center: (
+                align-items: center
+            ),
+            cross-baseline: (
+                align-items: baseline
+            ),
+            cross-start: (
+                align-items: flex-start
+            ),
+            cross-end: (
+                align-items: flex-end
+            ),
+            nowrap: (
+                flex-wrap: nowrap
+            ),
+            column: (
+                flex-direction: column
+            ),
+            column-reverse: (
+                flex-direction: column-reverse
+            ),
+            row-reverse: (
+                flex-direction: row-reverse
+            )
+        )
+    )
+);
