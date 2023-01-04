@@ -3,63 +3,23 @@ $briks-components-generic: (
         enabled: true,
         responsive: true,
         defaults: (
-            display: flex,
-            flex-wrap: wrap,
+            --gap-0: 0px,
+            --gap-1: 10px,
+            --gap-2: 20px,
+            --gap-3: 30px
         ),
         modifiers: (
-            g12: (
-                gap: 12px
+            gap-0: (
+                gap: var(--gap-0)
             ),
-            g16: (
-                gap: 16px
+            gap-1: (
+                gap: var(--gap-1)
             ),
-            g24: (
-                gap: 24px
+            gap-2: (
+                gap: var(--gap-2)
             ),
-            g32: (
-                gap: 32px
-            ),
-            main-center: (
-                justify-content: center
-            ),
-            main-space-between: (
-                justify-content: space-between
-            ),
-            main-space-around: (
-                justify-content: space-around
-            ),
-            main-space-evenly: (
-                justify-content: space-evenly
-            ),
-            main-start: (
-                justify-content: flex-start
-            ),
-            main-end: (
-                justify-content: flex-end
-            ),
-            cross-center: (
-                align-items: center
-            ),
-            cross-baseline: (
-                align-items: baseline
-            ),
-            cross-start: (
-                align-items: flex-start
-            ),
-            cross-end: (
-                align-items: flex-end
-            ),
-            nowrap: (
-                flex-wrap: nowrap
-            ),
-            column: (
-                flex-direction: column
-            ),
-            column-reverse: (
-                flex-direction: column-reverse
-            ),
-            row-reverse: (
-                flex-direction: row-reverse
+            gap-3: (
+                gap: var(--gap-3)
             )
         )
     )

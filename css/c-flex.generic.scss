@@ -1,9 +1,10 @@
 ---
 ---
 /*
-    POINT D'ENTRÉE D'EXTENSION C-FLEX
-    Déclarations complémentaires pour le projet Cosmobilis.eu
+    POINT D'ENTRÉE C-FLEX GÉNÉRIQUE
+    Commun à tous les projets contenant c-flex
 */
+
 /*
     CORE
     Settings and main functionalities
@@ -18,8 +19,8 @@
     SETTINGS
     User settings
 */
-@import 'briks/settings/tokens/cosmobilis';
-@import 'flex_cosmobilis';
+@import 'briks/settings/tokens/generic';
+@import 'flex_generic';
 /*
     COMPONENTS
     Requires _core.scss

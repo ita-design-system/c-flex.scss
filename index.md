@@ -1,3 +1,44 @@
+---
+layout: libdoc/page-split
+---
+```html
+<div class="c-flex">
+    <div>item un</div>
+    <div>item deux</div>
+    <div>item trois</div>
+    <div>item quatre</div>
+</div>
+<ul class="c-flex">
+    <li>item un</li>
+    <li>item deux</li>
+    <li>item trois</li>
+    <li>item quatre</li>
+</ul>
+<!-- DEMO UNIQUEMENT -->
+<style>
+    body {
+        padding: 1rem;
+        background-color: ghostwhite;
+        font-family: monospace;
+    }
+    .c-flex {
+        background-color: #EEE;
+    }
+    .c-flex > * {
+        background-color: #e8ffba;
+        border: 0.5px dashed grey;
+        padding: 1rem;
+    }
+    .c-flex + .c-flex {
+        margin-top: 1rem;
+    }
+</style>
+```
+{:.playground title="Exemple générique"}
+
+Composant CSS de grille flexbox polyvalent, personnalisable et cascadable. c-flex peut être personnalisé en fonction du projet.
+
+```scss
 $briks-components-generic: (
     flex: (
         enabled: true,
@@ -7,18 +48,6 @@ $briks-components-generic: (
             flex-wrap: wrap,
         ),
         modifiers: (
-            g12: (
-                gap: 12px
-            ),
-            g16: (
-                gap: 16px
-            ),
-            g24: (
-                gap: 24px
-            ),
-            g32: (
-                gap: 32px
-            ),
             main-center: (
                 justify-content: center
             ),
@@ -64,3 +93,4 @@ $briks-components-generic: (
         )
     )
 );
+``` 

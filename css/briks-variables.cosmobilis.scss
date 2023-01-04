@@ -19,11 +19,9 @@
     User settings
 */
 @import 'briks/settings/tokens/cosmobilis';
-@import 'flex_cosmobilis';
 /*
-    COMPONENTS
+    CSS VARIABLES
     Requires _core.scss
-    This file builds CSS classes for complex elements with inheritance
-    In components, only inheritance is set, no never !important declaration
+    This file generates CSS variables into the output file
 */
-@import 'briks/components';
+@import 'briks/css-vars';

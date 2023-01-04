@@ -1,3 +1,8 @@
+/*
+    C-FLEX
+    Composant générique CSS ITADS
+    https://github.com/ita-design-system/c-flex.scss
+*/
 $briks-components-generic: (
     flex: (
         enabled: true,
@@ -7,18 +12,6 @@ $briks-components-generic: (
             flex-wrap: wrap,
         ),
         modifiers: (
-            g12: (
-                gap: 12px
-            ),
-            g16: (
-                gap: 16px
-            ),
-            g24: (
-                gap: 24px
-            ),
-            g32: (
-                gap: 32px
-            ),
             main-center: (
                 justify-content: center
             ),
