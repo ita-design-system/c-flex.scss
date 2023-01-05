@@ -1,19 +1,23 @@
 ---
-layout: libdoc/page-split
+layout: libdoc/page-codemirror
 ---
-```html
-<div class="c-flex">
-    <div>item un</div>
-    <div>item deux</div>
-    <div>item trois</div>
-    <div>item quatre</div>
-</div>
-<ul class="c-flex">
-    <li>item un</li>
-    <li>item deux</li>
-    <li>item trois</li>
-    <li>item quatre</li>
-</ul>
+<section class="c-flex m-gap-3" 
+    m-gap-2="md" 
+    m-gap-1="xs,sm" 
+    m-nowrap="sm,md,lg,xl">
+    <menu class="c-flex" 
+        m-column="sm,md,lg,xl">
+        <li><a href="#">Lien</a></li>
+        <li><a href="#">Lien</a></li>
+        <li><a href="#">Lien</a></li>
+    </menu>
+    <header class="c-flex m-column m-gap-3"
+        m-gap-2="md" 
+        m-gap-1="xs,sm">
+        <h1>c-flex</h1>
+        <p>Composant CSS de grille flexbox polyvalent, cascadable et personnalisable en fonction du projet.</p>
+    </header>
+</section>
 <!-- DEMO UNIQUEMENT -->
 <style>
     body {
@@ -34,71 +38,13 @@ layout: libdoc/page-split
         border: var(--ita-border-6);
         padding: var(--ita-spacing-4);
     }
-    .c-flex + .c-flex {
-        margin-top: var(--ita-spacing-4);
+    menu, h1, p {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
-    .c-flex + h2 {
-        margin-top: var(--ita-spacing-12);
+    a {
+        color: var(--ita-color-primary-900);
+        text-underline-offset: 0.2em;
     }
 </style>
-```
-{:.playground title="Exemple générique"}
-
-Composant CSS de grille flexbox polyvalent, personnalisable et cascadable. c-flex peut être personnalisé en fonction du projet.
-
-```scss
-$briks-components-generic: (
-    flex: (
-        enabled: true,
-        responsive: true,
-        defaults: (
-            display: flex,
-            flex-wrap: wrap,
-        ),
-        modifiers: (
-            main-center: (
-                justify-content: center
-            ),
-            main-space-between: (
-                justify-content: space-between
-            ),
-            main-space-around: (
-                justify-content: space-around
-            ),
-            main-space-evenly: (
-                justify-content: space-evenly
-            ),
-            main-start: (
-                justify-content: flex-start
-            ),
-            main-end: (
-                justify-content: flex-end
-            ),
-            cross-center: (
-                align-items: center
-            ),
-            cross-baseline: (
-                align-items: baseline
-            ),
-            cross-start: (
-                align-items: flex-start
-            ),
-            cross-end: (
-                align-items: flex-end
-            ),
-            nowrap: (
-                flex-wrap: nowrap
-            ),
-            column: (
-                flex-direction: column
-            ),
-            column-reverse: (
-                flex-direction: column-reverse
-            ),
-            row-reverse: (
-                flex-direction: row-reverse
-            )
-        )
-    )
-);
-``` 
