@@ -38,22 +38,30 @@ order: 300
     <div><h6>Item 3</h6></div>
 </div>
 
+<h2>Exemple responsive</h2>
+<p>cross-end sur taille d'écran xs et cross-start sur taille d'écran sm</p>
+<div class="c-flex" m-cross-end="xs" m-cross-start="sm">
+    <div>Item 1</div>
+    <div>Item 2<br> Avec une ligne en plus <br>pour visualiser l'effet</div>
+</div>
 <!-- DEMO UNIQUEMENT -->
 <style>
     body {
         padding: var(--ita-spacing-4);
-        background-color: var(--ita-color-neutral-800);
+        background-color: var(--ita-color-primary-900);
+        color: var(--ita-color-primary-200);
         font-family: var(--ita-font-family-mono);
         font-size: 1rem;
         line-height: 1.5rem;
         padding-bottom: 50vh;
     }
     .c-flex {
-        background-color: var(--ita-color-support-success-900);
+        background-color: var(--ita-color-primary-800);
     }
     .c-flex > * {
-        background-color: var(--ita-color-support-success-700);
-        border: var(--ita-border-7);
+        background-color: var(--ita-color-primary-500);
+        color: var(--ita-color-primary-900);
+        border: var(--ita-border-6);
         padding: var(--ita-spacing-4);
     }
     .c-flex + .c-flex {

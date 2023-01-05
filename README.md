@@ -58,6 +58,9 @@ $briks-components-generic: ( // SCSS map
             nowrap: ( // c-flex m-nowrap
                 flex-wrap: nowrap
             ),
+            wrap-reverse: ( // c-flex m-wrap-reverse
+                flex-wrap: wrap-reverse
+            ),
             column: ( // c-flex m-column
                 flex-direction: column
             ),

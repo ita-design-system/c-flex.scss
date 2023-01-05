@@ -44,19 +44,27 @@ a le même effet que les classes CSS
 <style>
     body {
         padding: var(--ita-spacing-4);
-        background-color: var(--ita-color-neutral-800);
-        font-family: monospace;
+        background-color: var(--ita-color-primary-900);
+        color: var(--ita-color-primary-200);
+        font-family: var(--ita-font-family-mono);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 50vh;
     }
     .c-flex {
-        background-color: var(--ita-color-support-success-900);
+        background-color: var(--ita-color-primary-800);
     }
     .c-flex > * {
-        background-color: var(--ita-color-support-success-700);
-        border: var(--ita-border-7);
+        background-color: var(--ita-color-primary-500);
+        color: var(--ita-color-primary-900);
+        border: var(--ita-border-6);
         padding: var(--ita-spacing-4);
     }
     .c-flex + .c-flex {
         margin-top: var(--ita-spacing-4);
+    }
+    .c-flex + h2 {
+        margin-top: var(--ita-spacing-12);
     }
 </style>
 ```
