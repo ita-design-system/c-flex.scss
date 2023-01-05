@@ -7,7 +7,7 @@ plugins:
 # END # TO USE JEKYLL LIBDOC LOCALLY AS REMOTE THEME
 title: c-flex # title of the documentation
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
-  Documentation du composant CSS c-flex du système de design ITADS
+  Documentation du composant CSS de grille flexbox polyvalente, personnalisable et cascadable.
 # baseurl: "/c-flex.scss/_site" # the subpath of your site, e.g. /blog
 # url: "http://192.168.1.54" # the base hostname & protocol for your site, e.g. http://example.com
 #permalink: /:path/:basename/:output_ext

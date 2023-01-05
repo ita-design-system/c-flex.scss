@@ -18,19 +18,19 @@ layout: libdoc/page-split
 <style>
     body {
         padding: 1rem;
-        background-color: ghostwhite;
+        background-color: var(--ita-color-neutral-800);
         font-family: monospace;
     }
     .c-flex {
-        background-color: #EEE;
+        background-color: var(--ita-color-support-success-900);
     }
     .c-flex > * {
-        background-color: #e8ffba;
-        border: 0.5px dashed grey;
-        padding: 1rem;
+        background-color: var(--ita-color-support-success-700);
+        border: var(--ita-border-7);
+        padding: var(--ita-spacing-4);
     }
     .c-flex + .c-flex {
-        margin-top: 1rem;
+        margin-top: var(--ita-spacing-4);
     }
 </style>
 ```
