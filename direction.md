@@ -1,8 +1,8 @@
 ---
-title: Directions
+title: Direction
 description: Modifieurs relatifs à la propriété flex-direction
 layout: libdoc/page-split
-order: 400
+order: 500
 ---
 ```html
 <h2>m-column</h2>
@@ -75,6 +75,6 @@ order: 400
     }
 </style>
 ```
-{:.playground title="Modifieur m-nowrap"}
+{:.playground title="Modifieurs flex-direction"}
 
 

@@ -75,6 +75,6 @@ order: 400
     }
 </style>
 ```
-{:.playground title="Modifieur m-nowrap"}
+{:.playground title="Modifieurs flex-wrap"}
 
 

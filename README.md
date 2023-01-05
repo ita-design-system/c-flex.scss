@@ -21,12 +21,20 @@ $briks-components-generic: ( // SCSS map
         enabled: true, // Composant activé true ou false
         responsive: true, // Responsive activé true ou false
         defaults: ( // Liste des propriétés c-flex par défaut
+            --gap: 0px,
             display: flex,
             flex-wrap: wrap,
         ),
         modifiers: ( // Liste des modifieurs contenant chacun une liste de propriétés qui surchargent celles par défaut
+            // Axe main
+            main-start: ( // c-flex m-main-start
+                justify-content: flex-start
+            ),
             main-center: ( // c-flex m-main-center
                 justify-content: center
+            ),
+            main-end: ( // c-flex m-main-end
+                justify-content: flex-end
             ),
             main-space-between: ( // c-flex m-main-space-between
                 justify-content: space-between
@@ -37,12 +45,7 @@ $briks-components-generic: ( // SCSS map
             main-space-evenly: ( // c-flex m-main-space-evenly
                 justify-content: space-evenly
             ),
-            main-start: ( // c-flex m-main-start
-                justify-content: flex-start
-            ),
-            main-end: ( // c-flex m-main-end
-                justify-content: flex-end
-            ),
+            // Axe cross
             cross-center: ( // c-flex m-cross-center
                 align-items: center
             ),
@@ -55,12 +58,14 @@ $briks-components-generic: ( // SCSS map
             cross-end: ( // c-flex m-cross-end
                 align-items: flex-end
             ),
+            // Wrap / retour à la ligne
             nowrap: ( // c-flex m-nowrap
                 flex-wrap: nowrap
             ),
             wrap-reverse: ( // c-flex m-wrap-reverse
                 flex-wrap: wrap-reverse
             ),
+            // Direction
             column: ( // c-flex m-column
                 flex-direction: column
             ),
@@ -69,6 +74,20 @@ $briks-components-generic: ( // SCSS map
             ),
             row-reverse: ( // c-flex m-cross-row-reverse
                 flex-direction: row-reverse
+            ),
+            // Gap
+            // Surcharge de la variable CSS --ita-gap pour compatibilité avec c-dim
+            gap-1: ( // c-flex m-gap-1
+                --ita-gap: my-spacing(2),
+                gap: my-spacing(2)
+            ),
+            gap-2: ( // c-flex m-gap-2
+                --ita-gap: my-spacing(4),
+                gap: my-spacing(4)
+            ),
+            gap-3: ( // c-flex m-gap-3
+                --ita-gap: my-spacing(8),
+                gap: my-spacing(8)
             )
         )
     )
