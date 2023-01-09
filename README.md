@@ -4,37 +4,21 @@ Composant CSS c-flex du système de design IT Automotive
 
 ## Installation avec Jekyll LibDoc distant
 
-Inclure le point d'entrée avec le code suivant
+1. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
+2. Ajouter un Gemfile contenant la ligne suivante
 
-```scss
-// Deux lignes de 3 tirets pour le point d'entrée
----
----
-/*
-    CORE
-    Permet d'utiliser les mixins et les fonctions de briks
-    Aucun CSS n'est produit à partir de ce fichier
-*/
-@import 'briks/core';
-/*
-    DESIGN TOKENS
-    Préfixes, couleurs, tailles d'écran, espacements, typos, tailles de typo, etc
-    _sass/briks/settings/tokens/_generic.scss
-    Ce fichier contient des design tokens servant d'exemple pour les démos uniquement
-*/
-@import 'briks/settings/tokens/generic';
-/*
-    CONFIGURATION
-    L'ensemble des paramètres du composant
-    _sass/_flex_generic.scss
-*/
-@import 'flex_generic';
-/*
-    COMPOSANTS
-    Fichier nécessaire à la génération des déclarations CSS des composants
-*/
-@import 'briks/components';
-```
+  ```ruby
+  gem "jekyll-remote-theme"
+  ```
+  et exécuter `bundle install` pour installer le plugin.
+3. Ajouter les lignes suivantes dans votre fichier de configuration LibDoc `_<NOM DU FICHIER>.yml`
+
+  ```yml
+  remote_theme: ita-design-system/jekyll-libdoc
+  plugins:
+    - jekyll-remote-theme
+  ```
+4. Exécuter `jekyll build` ou `jekyll build -c _votre-fichier-config.yml`
 
 ## Configuration
 
