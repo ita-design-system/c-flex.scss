@@ -8,7 +8,8 @@ $briks-components-generic: ( // SCSS map
         enabled: true, // Composant activé true ou false
         responsive: true, // Responsive activé true ou false
         defaults: ( // Liste des propriétés c-flex par défaut
-            --gap: 0px,
+            --ita-gap: 0px,
+            gap: var(--ita-gap),
             display: flex,
             flex-wrap: wrap,
         ),
@@ -65,16 +66,13 @@ $briks-components-generic: ( // SCSS map
             // Gap
             // Surcharge de la variable CSS --ita-gap pour compatibilité avec c-dim
             gap-1: ( // c-flex m-gap-1
-                --ita-gap: my-spacing(2),
-                gap: my-spacing(2)
+                --ita-gap: my-spacing(2)
             ),
             gap-2: ( // c-flex m-gap-2
-                --ita-gap: my-spacing(4),
-                gap: my-spacing(4)
+                --ita-gap: my-spacing(4)
             ),
             gap-3: ( // c-flex m-gap-3
-                --ita-gap: my-spacing(8),
-                gap: my-spacing(8)
+                --ita-gap: my-spacing(8)
             )
         )
     )
