@@ -123,9 +123,9 @@ playground:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
     stylesheets: 
-        - /css/briks-variables.generic.css
-        - /css/briks-fonts.css
-        - /css/c-flex.generic.css
+        - /content/css/briks-variables.generic.css
+        - /content/css/briks-fonts.css
+        - /content/css/c-flex.generic.css
         # - /css/c-flex.cosmobilis.css
     # Javascript in <head>. Can be either:
     # Relative URL from site root starting with slash /

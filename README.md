@@ -2,6 +2,8 @@
 
 Composant CSS c-flex du système de design IT Automotive
 
+![Diagramme portée CSS du composant c-flex](content/img/mermaid-diagram-2023-01-10-162013.svg)
+
 ## Installation avec Jekyll LibDoc distant
 
 1. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
@@ -20,20 +22,30 @@ Composant CSS c-flex du système de design IT Automotive
   ```
 4. Exécuter `jekyll build` ou `jekyll build -c _votre-fichier-config.yml`
 
+## Typologie du composant générique
+
+```scss
+// SCSS map
+$briks-components-generic: ( 
+    // SCSS map | Nom du composant
+    NOM_DU_COMPOSANT: ( 
+        // Boolean | Composant activé true ou false
+        enabled: true, 
+        // Boolean | Responsive activé true ou false
+        responsive: true, 
+        // SCSS map | Liste des propriétés du composant par défaut (c-flex seul)
+        defaults: (), 
+        // SCSS map | Liste des modifieurs
+        modifiers: () 
+    )
+);
+```
+
 ## Configuration
 
 Organisation et description du fichier de configuration [_sass/_flex_generic.scss](_sass/_flex_generic.scss).
 
 ```scss
-// EXEMPLE DE COMPOSANT GÉNÉRIQUE VIDE
-$briks-components-generic: ( // SCSS map
-    NOM_DU_COMPOSANT: ( // SCSS map | Nom du composant
-        enabled: true, // Boolean | Composant activé true ou false
-        responsive: true, // Boolean | Responsive activé true ou false
-        defaults: (), // SCSS map | Liste des propriétés du composant par défaut (c-flex seul)
-        modifiers: () // SCSS map | Liste des modifieurs
-    )
-);
 /*
     C-FLEX
     Composant générique CSS ITADS
@@ -60,8 +72,11 @@ $briks-components-generic: (
         //     gap: var(--ita-gap),
         //     display: flex,
         //     flex-wrap: wrap,
-        // }
-        // Liste des modifieurs contenant chacun une liste de propriétés qui surchargent celles par défaut
+        // }s
+        // Liste des modifieurs contenant chacun une liste de propriétés qui 
+        // soit surchargent les propriétés par défaut
+        // soit ajoutent des propriétés
+        // soit les deux
         modifiers: ( 
             // Axe main
             // c-flex m-main-start

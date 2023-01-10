@@ -25,7 +25,10 @@ $briks-components-generic: (
         //     display: flex,
         //     flex-wrap: wrap,
         // }
-        // Liste des modifieurs contenant chacun une liste de propriétés qui surchargent celles par défaut
+        // Liste des modifieurs contenant chacun une liste de propriétés qui 
+        // soit surchargent les propriétés par défaut
+        // soit ajoutent des propriétés
+        // soit les deux
         modifiers: ( 
             // Axe main
             // c-flex m-main-start

@@ -1,5 +1,7 @@
 ---
 layout: libdoc/page-codemirror
+permalink: index.html
+unlisted: true
 ---
 <section class="c-flex m-gap-3" 
     m-gap-2="md" 
