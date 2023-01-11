@@ -93,21 +93,6 @@ $briks-components-generic: (
             // c-flex m-cross-row-reverse
             row-reverse: ( 
                 flex-direction: row-reverse
-            ),
-            // Gap
-            // Surcharge de la variable CSS
-            // Compatible avec c-dim
-            // c-flex m-gap-1
-            gap-1: ( 
-                --ita-gap: my-spacing(2)
-            ),
-            // c-flex m-gap-2
-            gap-2: ( 
-                --ita-gap: my-spacing(4)
-            ),
-            // c-flex m-gap-3
-            gap-3: ( 
-                --ita-gap: my-spacing(8)
             )
         )
     )

@@ -3,9 +3,7 @@ layout: libdoc/page-codemirror
 permalink: index.html
 unlisted: true
 ---
-<section class="c-flex m-gap-3" 
-    m-gap-2="md" 
-    m-gap-1="xs,sm" 
+<section class="c-flex"
     m-nowrap="sm,md,lg,xl">
     <menu class="c-flex" 
         m-column="sm,md,lg,xl">
@@ -13,9 +11,7 @@ unlisted: true
         <li><a href="#">Lien</a></li>
         <li><a href="#">Lien</a></li>
     </menu>
-    <header class="c-flex m-column m-gap-3"
-        m-gap-2="md" 
-        m-gap-1="xs,sm">
+    <header class="c-flex m-column">
         <h1>c-flex</h1>
         <p>Composant CSS de grille flexbox polyvalent, cascadable et personnalisable en fonction du projet.</p>
     </header>
