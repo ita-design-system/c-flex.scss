@@ -6,24 +6,6 @@ Composant générique CSS c-flex du système de design IT Automotive.
 
 ![Diagramme portée CSS du composant c-flex](content/img/mermaid-diagram-2023-01-10-162013.svg)
 
-## Installation avec Jekyll LibDoc distant
-
-1. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
-2. Ajouter un Gemfile contenant la ligne suivante
-
-  ```ruby
-  gem "jekyll-remote-theme"
-  ```
-  et exécuter `bundle install` pour installer le plugin.
-3. Ajouter les lignes suivantes dans votre fichier de configuration LibDoc `_<NOM DU FICHIER>.yml`
-
-  ```yml
-  remote_theme: ita-design-system/jekyll-libdoc
-  plugins:
-    - jekyll-remote-theme
-  ```
-4. Exécuter `jekyll build` ou `jekyll build -c _votre-fichier-config.yml`
-
 ## Typologie d'un composant générique
 
 ```scss
