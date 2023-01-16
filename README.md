@@ -32,6 +32,7 @@ Organisation et description du fichier de configuration [_sass/_flex_generic.scs
 ```scss
 /*
     C-FLEX
+    v0.1.0
     Composant générique CSS ITADS
     https://github.com/ita-design-system/c-flex.scss
 */
