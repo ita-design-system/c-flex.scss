@@ -63,6 +63,11 @@ $briks-components-generic: (
         // soit ajoutent des propriétés
         // soit les deux
         modifiers: ( 
+            // Type de flex
+            // c-flex m-inline-flex
+            inline-flex: (
+                display: inline-flex
+            ),
             // Axe main
             // c-flex m-main-start
             main-start: ( 
