@@ -2,9 +2,19 @@
 
 [Démo et documentation](https://ita-design-system.github.io/c-flex.scss/)
 
-Composant générique CSS c-flex du système de design IT Automotive.
+Composant CSS de grille flexbox polyvalent, personnalisable et cascadable. 
 
-![Diagramme portée CSS du composant c-flex](content/img/mermaid-diagram-2023-01-10-162013.svg)
+## Scope
+
+Liste des propriétés CSS utilisées par le composant
+
+* [font-family](https://developer.mozilla.org/fr/docs/Web/CSS/font-family)
+* [display: flex](https://developer.mozilla.org/fr/docs/Web/CSS/display)
+* [align-items](https://developer.mozilla.org/fr/docs/Web/CSS/align-items)
+* [justify-content](https://developer.mozilla.org/fr/docs/Web/CSS/justify-content)
+* [flex-wrap](https://developer.mozilla.org/fr/docs/Web/CSS/flex-wrap)
+* [flex-direction](https://developer.mozilla.org/fr/docs/Web/CSS/flex-direction)
+* [gap](https://developer.mozilla.org/fr/docs/Web/CSS/gap)
 
 ## Typologie d'un composant générique
 
