@@ -52,12 +52,12 @@ $briks-components-generic: (
             flex-wrap: wrap,
         ),
         // Rendu: 
-        // .c-flex {
+        // c-flex {
         //     --ita-gap: 0px,
         //     gap: var(--ita-gap),
         //     display: flex,
         //     flex-wrap: wrap,
-        // }s
+        // }
         // Liste des modifieurs contenant chacun une liste de propriétés qui 
         // soit surchargent les propriétés par défaut
         // soit ajoutent des propriétés
@@ -73,11 +73,6 @@ $briks-components-generic: (
             main-start: ( 
                 justify-content: flex-start
             ),
-            // Rendu:
-            // .c-flex.m-main-start {
-            //     justify-content: flex-start
-            // }
-            // Même logique pour les autres modifieurs
             // c-flex m-main-center
             main-center: ( 
                 justify-content: center
@@ -119,10 +114,6 @@ $briks-components-generic: (
             // c-flex m-nowrap
             nowrap: ( 
                 flex-wrap: nowrap
-            ),
-            // c-flex m-wrap-reverse
-            wrap-reverse: ( 
-                flex-wrap: wrap-reverse
             ),
             // Direction
             // c-flex m-column

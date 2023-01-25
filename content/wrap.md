@@ -18,21 +18,6 @@ order: 400
     <div>Item 3 dans un conteneur c-flex <strong>avec modifieur m-nowrap</strong></div>
 </div>
 
-<h2>m-wrap-reverse</h2>
-<p>Pour <strong>flex-wrap: wrap-reverse</strong></p>
-<div class="c-flex">
-    <div>Item dans un conteneur c-flex par défaut</div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-    <div>Item 4</div>
-</div>
-<div class="c-flex m-wrap-reverse">
-    <div>Item dans un conteneur c-flex <strong>m-wrap-reverse</strong></div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-    <div>Item 4</div>
-</div>
-
 <h2>Exemples responsive</h2>
 <div class="c-flex m-nowrap--xs">
     <div>Je passe en nowrap en taille d'écran xs</div>
