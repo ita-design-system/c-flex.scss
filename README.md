@@ -1,3 +1,5 @@
+**Déprécié, remplacé par [c-dis](https://github.com/ita-design-system/c-dis.scss)**
+
 # c-flex.scss
 
 [Démo et documentation](https://ita-design-system.github.io/c-flex.scss/)
